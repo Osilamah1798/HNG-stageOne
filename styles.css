@@ -1,0 +1,141 @@
+/* Reset and Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+}
+header{
+    text-align: center;
+}
+header, section, footer {
+    padding: 20px;
+    margin: 20px;
+   
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333; /* Dark text color for sections */
+}
+
+h1, h2 {
+    color: #007bff; /* Blue heading color */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    color: #555; /* Dark text color for footer */
+}
+
+/* About Me Section */
+#about {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about-det {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-cnt {
+    width: 80%;
+    text-align: center;
+}
+
+#about-cnt p {
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+#about-det img {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Year Sections */
+#year-1, #year-2 {
+    margin-top: 40px;
+}
+
+#year-1 h2, #year-2 h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#year-1 ul, #year-2 ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#year-1 ul li, #year-2 ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Footer Links */
+footer a {
+    margin: 0 10px;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+#flinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Copyright */
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-det {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about-cnt {
+        width: 90%;
+    }
+
+    #about-det img {
+        width: 150px;
+    }
+
+    #year-1 h2, #year-2 h2 {
+        font-size: 1.5em;
+    }
+
+    #year-1 ul li, #year-2 ul li {
+        font-size: 1em;
+    }
+}
